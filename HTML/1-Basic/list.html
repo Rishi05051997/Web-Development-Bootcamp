@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        dt::after {
+            content: ": ";
+        }
+
+        dd::after {
+            content: ",";
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +36,17 @@
         <li>Panner</li>
     </ul>
 
-    <img src="./../src/tofu.jfif" alt="Tofu Picture" width="100" height="100" />
+    <h2>Description List</h2>
+    <dl>
+        <dt>Name</dt>
+        <dd>Vrushabh Dhatrak</dd>
+        <dt>Born</dt>
+        <dd>Nashik</dd>
+        <dt>DOB</dt>
+        <dd>05/05/1997</dd>
+    </dl>
+
+    <img src="../src/tofu.jfif" alt="Tofu Picture" width="100" height="100" />
 </body>
 
 </html>
