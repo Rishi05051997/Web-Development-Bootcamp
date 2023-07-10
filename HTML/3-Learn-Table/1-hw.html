@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px dotted #000;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        caption {
+            caption-side: bottom;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: aqua;">
+            <col span="1" style="background-color: rgb(213, 181, 38);">
+            <col span="1" style="background-color: rgb(154, 42, 135);">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th rowspan="2">State Of Health</th>
+                <!-- <th></th> -->
+                <th colspan="2">Fasting Value</th>
+                <th>After eating</th>
+            </tr>
+            <tr>
+                <th>Minimum</th>
+                <th>Maximum</th>
+                <th>2 hours After eating</th>
+            </tr>
+            <tr>
+                <th>Healthy</th>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 100</td>
+            </tr>
+            <tr>
+                <th>Pre Dibetes</th>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200</td>
+            </tr>
+            <tr>
+                <th>Diabetes</th>
+                <td>More than 126</td>
+                <td>NA</td>
+                <td>More than 200</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

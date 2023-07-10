@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px dotted #000;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        caption {
+            caption-side: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Time Table</caption>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hours</td>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>Sci</td>
+                <td>Maths</td>
+                <td>Sci</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>Sci</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <th colspan="5">Lunch</th>
+                <!-- <td></td>
+                <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>Sci</td>
+                <td>Maths</td>
+                <td>Sci</td>
+                <td>Maths</td>
+                <td colspan="2" rowspan="2">Project</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+                <!-- <td></td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
