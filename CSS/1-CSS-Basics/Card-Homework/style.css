@@ -1,0 +1,52 @@
+@font-face {
+    font-family: rubik;
+    src: url(../Card-Homework/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+.container {
+    background-color: #ffff;
+    width: 500px;
+    margin: 1rem;
+    box-shadow: 0px 0px 9px 0px #000;
+    font-family: rubik;
+}
+
+.sub-container {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.sub-container .banner {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.header {
+    width: 70%;
+    border-bottom: 3px solid #eaeaea;
+    ;
+}
+
+.footer p,
+button {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 10px 5px;
+}
+
+.footer .price {
+    color: #a35bd5;
+}
+
+.footer .orgn {
+    color: #928c8c;
+}
+
+.footer .btn {
+    background-color: #1ec88f;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 3px 7px;
+}

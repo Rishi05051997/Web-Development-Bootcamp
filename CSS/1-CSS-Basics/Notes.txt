@@ -1,0 +1,150 @@
+Selectors in CSS
+1.Simple Selectors
+    a. Element Selectors
+    b. Class Selectors
+    c. ID Selectors
+
+2.Pseudo-class Selectors
+3.Multiple Selectors
+
+**** Simple Selectors ****
+    Element Selector:
+        CSS can select HTML elements by using an element's tag. A tag name  is   the word ( or character) between HTML angle brackets. 
+
+        For Ex.
+            p {
+                color: red;
+                font-size: 10px;
+            }   
+
+    Class Selector:
+        CSS is not limited to selecting elements by tag name. HTML elements can have more than just a tag name; they can also have attributes.One common attribute is the class attribute. It's also possible to select an element by it's class atttribute.
+
+        To select an HTML element by it's class using CSS, a period (.) must be prepended to the class name.
+
+        For Ex.
+            .head {
+                color: grey;
+                font-size: 15px;
+            }
+
+    ID Selector:
+        For situations where you need more specificity in styling, you may also select elements for CSS using an id atttribute. You can have different ids associated with a class (although a class is not required).
+
+        This id attribute can be added to an element, along with a class attribute. On the CSS side, the defination is made by using (#) to represent an id, the same way (>) is used for class.
+
+        For Ex.
+            .head {
+                color: grey;
+            }
+
+2.Psuedo-classes Selector:
+    A CSS psuedo-class is a keyword added to a selector that specifies a special state of the slected element's. For Ex. :hover can be used to change a button's color when the user's pointer hovers over it.
+
+    For Ex.
+        .btn:hover {
+            color: red;
+        }
+
+3.Multiple Selector:
+    What if we want to add some styles to all our headings ? we don't want to have redundant rules, since that would eventually become a nightmare to maintain to maintain & is not scalable at all.
+
+    Instead, we can select multiple HTML elements in the same CSS rule by saperating them with commas.
+
+    Copying & pasting code is usually a bad idea for web developers & multiple selectors can help reduce that kind of behavior quite a bit.
+
+    For Ex.
+        table, tr, td {
+            border: 1px solid red;
+        }
+
+4.Universal Selector
+    The * selector can also select all elements inside another Element
+    For Ex.
+        * {
+            css declarations;
+        }
+    Select all elements inside <div> elements and set their background color to yellow:
+        div * {
+            background-color: yellow;
+        }
+
+5. Combination Selectors:
+    a.descendant selector (space)
+        The descendant selector matches all elements that are descendants of a specified element.
+        The following example selects all <p> elements inside <div> elements: 
+
+
+        For Ex.
+            div p {
+                background-color: yellow;
+            }
+    b.Child Selector (>)
+        The child selector selects all elements that are the children of a specified element.
+        The following example selects all <p> elements that are children of a <div> element:
+
+        Example:
+            div > p {
+              background-color: yellow;
+            }
+    c.Adjacent Sibling Selector (+)
+        The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+        Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+        The following example selects the first <p> element that are placed immediately after <div> elements:
+
+        Example
+            div + p {
+              background-color: yellow;
+            }
+    d.General Sibling Selector (~)
+        The general sibling selector selects all elements that are next siblings of a specified element.
+
+        The following example selects all <p> elements that are next siblings of <div> elements: 
+
+        Example
+            div ~ p {
+              background-color: yellow;
+            }
+
+5.Nested Selector
+    When using a nested style rule, one must be able to refer to the elements matched by the parent rule; that is, after all, the entire point of nesting. To accomplish that, this specification defines a new selector, the nesting selector, written as & (U+0026 AMPERSAND).
+
+    When used in the selector of a nested style rule, the nesting selector represents the elements  matched by the parent rule. When used in any other context, it represents the same elements as :scope    in that context (unless otherwise defined).
+
+    The nesting selector can be desugared by replacing it with the parent style rule’s selector, wrapped    in an :is() selector. For example,
+        a, b {
+          & c { color: blue; }
+        }
+        is equivalent to
+
+        :is(a, b) c { color: blue; }
+    
+6.CSS [attribute] Selector
+    The [attribute] selector is used to select elements with a specified attribute. 
+
+    The following example selects all <a> elements with a target attribute: 
+
+    Example
+        a[target] {
+          background-color: yellow;
+        }
+        
+        Styling Forms
+        The attribute selectors can be useful for styling forms without class or ID:
+
+        Example
+        input[type="text"] {
+          width: 150px;
+          display: block;
+          margin-bottom: 10px;
+          background-color: yellow;
+        }
+
+        input[type="button"] {
+          width: 120px;
+          margin-left: 35px;
+          display: block;
+        }
+
