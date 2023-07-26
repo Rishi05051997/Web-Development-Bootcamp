@@ -49,14 +49,16 @@ CSS Overflow Peroperty
   -- scroll
   -- auto
 CSS Positioning
-  -- static
-  -- relative
-  -- fixed
-  -- absolute
-  -- sticky
+  -- static ( Default )
+  -- relative ( Take measurments from initial position )
+  -- fixed ( Position is fixed, even scroll also does not affect )
+  -- absolute ( Always given position as relative to the immediate ancestor other it will considered as bofy tag as its ancestor)
+  -- sticky (element always toggles between position relative & fixed)
 CSS Transforms
   -- 2D Transforms
-     -- trnaslate() -- movement
+     -- trnaslate() -- movement in X & Y direction;
+     -- translateX()
+     -- translateY()
      -- rotate() --
      -- scaleX() -- Zoom in horizontal
      -- scaleY() -- Zoom in verticle

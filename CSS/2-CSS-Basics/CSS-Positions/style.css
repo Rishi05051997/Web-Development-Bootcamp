@@ -1,0 +1,41 @@
+/* p {
+    position: static;
+} */
+
+.wrapper {
+    height: 1000px;
+    width: 100vw;
+    background-color: yellow;
+}
+
+div {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid #000;
+}
+
+#box-3 {
+    position: relative;
+}
+
+#box-4 {
+    position: sticky;
+    top: 0px;
+}
+
+#top-rgt {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: -23px;
+    bottom: -17px;
+}
+
+#box-1 {
+    position: fixed;
+
+}
