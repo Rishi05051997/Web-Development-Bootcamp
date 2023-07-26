@@ -1,0 +1,15 @@
+.content {
+    border: 1px dotted black;
+    width: 180px;
+    height: 180px;
+    overflow: visible;
+    overflow: hidden;
+    overflow: auto;
+}
+
+#divi {
+    margin-top: 10px;
+    border: 1px solid black;
+    height: 50px;
+    overflow: auto;
+}

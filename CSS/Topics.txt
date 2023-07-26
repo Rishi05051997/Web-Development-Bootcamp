@@ -10,11 +10,49 @@ CSS Font Properties
   -- Emphasis & Importance
   -- How to add external fonts ?
 Units in CSS 
+  -- Absolute (px)
+  -- Percentage (%)
+  -- Relative
+      -- em (Relative to parent font size)
+      -- rem(Reltive to root font size (16px))
 Ways of Adding CSS to HTML ?
-CSS Gradients 
+CSS Gradients (used background-image)
+   -- linear (goes down/up/left/right/diagonally)
+   -- radial (defined by their center)
+   -- conical (rotated around a center point)
 CSS Shadows
+  -- Text Shadows
+     text-shadow: _ _ _ _;
+                  H V B C
+     H - Horizontal
+     V - Verticle
+     B - Blur
+     C - Color
+  -- Box Shadows
+     box-shadow: _ _ _ _;
+                  H V B C
+     H - Horizontal
+     V - Verticle
+     B - Blur
+     C - Color
 CSS Dimension Properties
+  -- Height
+  -- Width
+  -- min-height/width
+  -- max-height/width
 CSS Overflow Peroperty
+  -- visible
+  -- hidden
+  -- scroll
+  -- auto
 CSS Positioning
+  -- static
+  -- relative
+  -- fixed
+  -- absolute
+  -- sticky
 CSS Transforms
 CSS FlexBox
+
+Exercise time:
+ Position text in all corners && center of an image

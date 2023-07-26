@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            /* > img {
+                width:50px;
+                height: 40px; 
+            } */
+            
+        }
+        .container img {
+                width:400px;
+                height: 400px;
+        }
+        .text-color {
+            color: #fff;
+            font-weight: bold;
+        }
+        .pos-left-top {
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        .pos-right-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .pos-center {
+            position: absolute;
+            left: 37%;
+            top: 50%;
+        }
+
+        .pos-left-bottom {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .pos-right-bottom {
+            position: absolute;
+            right:0;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Position text in all corners && center of an image</h3>
+    <div class="container">
+        <img src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg" alt="Web Development Bootcamp" srcset="" class="banner">
+        <p class="pos-left-top text-color">Left Top Text</p>
+        <p class="pos-right-top text-color">Right Top Text</p>
+        <p class="pos-center text-color">Center Text</p>
+        <p class="pos-left-bottom text-color">Left Bottom Text</p>
+        <p class="pos-right-bottom text-color">Right Bottom Text</p>
+    </div>
+</body>
+</html>
