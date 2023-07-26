@@ -13,6 +13,7 @@ Units in CSS
 Ways of Adding CSS to HTML ?
 CSS Gradients 
 CSS Shadows
+CSS Dimension Properties
 CSS Positioning
 CSS Transforms
 CSS FlexBox
