@@ -1,0 +1,40 @@
+.box {
+    background-color: aqua;
+    /* *** translate start here *** */
+
+    /* Movement in X & Y direction */
+    /* transform: translate(100px, 250px); */
+    /* Movement in X direction */
+    /* transform: translateX(40px) */
+    /* Movement in Y direction */
+    /* transform: translateY(40px) */
+
+    /* *** translate end here *** */
+
+    /* *** rotate start here *** */
+
+    /* transform: rotate(-45deg); */
+
+    /* *** rotate end here *** */
+
+    /* *** scale start here *** */
+
+    /* Zoom in X & Y direction */
+    /* transform: scale(1.3, 3); */
+    /* Movement in X direction */
+    /* transform: scaleX(1.2); */
+    /* Movement in Y direction */
+    /* transform: scaleY(3.4); */
+
+    /* *** scale end here *** */
+
+    /* *** skew start here *** */
+
+    /* transform: skew(45deg); */
+
+    /* *** skew end here *** */
+
+    /* *** skew start here *** */
+
+
+}

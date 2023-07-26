@@ -16,6 +16,9 @@ Units in CSS
       -- em (Relative to parent font size)
       -- rem(Reltive to root font size (16px))
 Ways of Adding CSS to HTML ?
+  -- Inline
+  -- External
+  -- Internal
 CSS Gradients (used background-image)
    -- linear (goes down/up/left/right/diagonally)
    -- radial (defined by their center)
@@ -52,6 +55,16 @@ CSS Positioning
   -- absolute
   -- sticky
 CSS Transforms
+  -- 2D Transforms
+     -- trnaslate() -- movement
+     -- rotate() --
+     -- scaleX() -- Zoom in horizontal
+     -- scaleY() -- Zoom in verticle
+     -- scale()  -- Zoom in both direction
+     -- skewX()  -- Tilt
+     -- skewY()
+     -- skew()
+     -- matrix() -- All above combination is possible
 CSS FlexBox
 
 Exercise time:
