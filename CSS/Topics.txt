@@ -2,6 +2,8 @@ What is CSS ?
 CSS Selectors
 Specificity in CSS
 CSS BOX Model
+Box Sizing:
+ box-sizing:border-box;
 Colors in CSS
 CSS Font Properties
   -- Font-family
@@ -56,7 +58,7 @@ CSS Positioning
   -- sticky (element always toggles between position relative & fixed)
 CSS Transforms
   -- 2D Transforms
-     -- trnaslate() -- movement in X & Y direction;
+     -- translate() -- movement in X & Y direction;
      -- translateX()
      -- translateY()
      -- rotate() --
@@ -67,7 +69,93 @@ CSS Transforms
      -- skewY()
      -- skew()
      -- matrix() -- All above combination is possible
-CSS FlexBox
+  
+  -- 3D Transforms
+    .translated {
+      transform: perspective(10px) translateZ(-10px);
+    }
+
+    .scaled {
+      margin-left: 200px;
+      transform: perspective(350px) scaleZ(3) rotate(15deg) rotateY(45deg);
+    }
+CSS FlexBox:
+  -- 1D Layout
+  -- Parent Container
+        Properties:
+          -- flex-direction ( it changes the direction of main axes  ) (row: horizontal , column: verticle)
+
+          -- flex-wrap: ( For maintaining width of lex item intact)
+              -- no-wrap ( default value )
+              -- wrap ( elements will be move on next line in case of width decrease)
+              -- wrap-reverse ( elements will be move top in case of width decrease )
+
+          -- flex-flow:
+            -- short hand notation of "flex-direction" & "flex-wrap"
+            -- For Ex.
+               flex-flow: column wrap;
+
+          -- justify-content:
+            -- it will align items on main axis i.e.., (Horizontal axis)
+            -- Values:
+              -- flex-start: it will place all items on start (left end) of main axis
+              -- flex-end: it will place all items on end (right end) of main axis
+              -- center: it will place all items to the center of main axis
+              -- space-around: it will add equal space between items only but spacing of left side of first item & right side of last item not equal
+              -- space-evenly: it will maintain equal spacing between each items
+              -- space-between: item of starting & ending will touch to the extrem edge of container & maintain equal space between remaining items
+
+          -- align-items:
+            -- it will align items on cross axis i.e.., (Verticle Axis)
+            - Values:
+              -- flex-start: it will place all items on start (top end) of cross axis
+              -- flex-end: it will place all items on end (bottom end) of cross axis
+              -- center: it will place all items to the center of cross axis
+              -- stretch: it will stretch each item to the extrem end of container (Default Value)
+              -- baseline: it will create one baseline & all items will revolve around that baseline
+
+          --gap:
+            -- it will add a gap between each items
+            -- it is short hand notation
+              -- row-gap
+              -- column-gap
+
+          -- align-content:
+            -- Values:
+              -- flex-start: it will place all rows on start (left end) of main axis
+              -- flex-end: it will place all rows on end (right end) of main axis
+              -- center: it will place all rows to the center of main axis
+              -- space-around: it will add equal space between rows only but spacing of left side of first row & right side of last row not equal
+              -- space-evenly: it will maintain equal spacing between each row
+              -- space-between: item of starting & ending will touch to the extrem edge of container & maintain equal space between remaining rows
+
+     -- Child items
+        Properties:
+          -- order
+            -- It will change order of each flex item
+          -- flex-grow
+            -- It will increase width of flex item
+          -- flex-shrink
+            -- For handling mobile responsiveness, we can used flex shrink as     width decrease then flex item also shrink quickly based upon width decreament
+          -- flex-basis
+            -- For setting width of flex item we can user flex-basis
+            For Ex.
+              -- flex-basis: 100px;
+          -- flex:
+            -- shorthand notation for handling "order", "floex-grow", "flex-shrink" & "flex-basis"
+          -- align-self
+            -- it will align each flex item
+            value:
+              -- flex-start: it will ailgn flex item to start
+              -- flex-end: it will alignn flex item to end
+              -- stretch: it will stretch flex item to the extreme ends
+              -- center: it will center flex item to the center
+
+
+
 
 Exercise time:
  Position text in all corners && center of an image
+
+ How to create a container with 4 child boxes with emmet ?
+  --   .container>.box{bod-$}
