@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=DM+Mono:wght@300;400;500&family=Nunito:wght@200;300;400;600;700;900&family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-40px) scale(5);
+
+}
+
+.foreground {
+    transform: translateZ(-20px) scale(3);
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* object-fit: cover; */
+}
+
+h1 {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 0 0 10px regb(0, 0, 0, 0.3);
+    font-family: 'Bree Serif', serif;
+
+}
+
+section {
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.secHeading {
+    font-size: 5rem;
+    padding: 0 10rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.desc {
+    position: absolute;
+    background-color: #fff;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Bree Serif', serif;
+}
+
+.bg1 {
+    background-image: url(./Assets/sport-1.jpg);
+}
+
+.bg2 {
+    background-image: url(./Assets/sport-2.jpg);
+}
+
+.bg3 {
+    background-image: url(./Assets/sport-3.jpg);
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+        top: 11rem;
+    }
+
+    section {
+        padding: 2.5rem 0;
+    }
+
+    .secHeading {
+        font-size: 2.5rem;
+        padding: 0 2rem;
+    }
+
+    .text {
+        font-size: 0.75rem;
+        padding: 0 2rem;
+        margin: 2.5rem 0;
+    }
+
+    .bg {
+        height: 250px;
+    }
+
+    .desc {
+        padding: 0.25rem 0.25rem;
+        font-size: 1.75rem;
+    }
+}

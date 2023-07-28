@@ -157,5 +157,7 @@ CSS FlexBox:
 Exercise time:
  Position text in all corners && center of an image
 
+Difference between img vs background-image ?
+
  How to create a container with 4 child boxes with emmet ?
   --   .container>.box{bod-$}
