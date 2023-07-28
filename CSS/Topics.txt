@@ -158,6 +158,9 @@ Exercise time:
  Position text in all corners && center of an image
 
 Difference between img vs background-image ?
+Learn background image all Properties
+Learn Perspective-style
+
 
  How to create a container with 4 child boxes with emmet ?
   --   .container>.box{bod-$}

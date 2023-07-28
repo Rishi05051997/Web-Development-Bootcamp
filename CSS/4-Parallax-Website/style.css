@@ -141,4 +141,9 @@ section {
         padding: 0.25rem 0.25rem;
         font-size: 1.75rem;
     }
+
+    .foreground {
+        top: 72%;
+        height: 60%;
+    }
 }
