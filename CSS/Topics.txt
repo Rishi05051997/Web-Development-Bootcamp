@@ -151,7 +151,16 @@ CSS FlexBox:
               -- stretch: it will stretch flex item to the extreme ends
               -- center: it will center flex item to the center
 
+Very IMP:
+  --- "Flexbox" is specific to content position
+  --- "Grid" is specific to layout only
 
+
+CSS Grids:
+  -- 2D 
+  -- Flexible Grid
+    -- grid-template-columns: repeat(3, 1fr);
+    -- grid-template-rows: repeat(4, 1fr);
 
 
 Exercise time:

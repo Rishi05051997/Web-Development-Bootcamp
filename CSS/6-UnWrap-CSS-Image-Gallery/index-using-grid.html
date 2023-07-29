@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unwrap CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #wrapper {
+        text-align: center;
+        margin: 1rem 25rem;
+        height: 100vh;
+      }
+      html,
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .container h1 {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 3rem;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .card {
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .card img {
+        height: 100%;
+        width: 100%;
+        filter: grayscale(100%);
+        box-shadow: 0 0 20px #333;
+      }
+
+      .card:hover {
+        transform: scale(1.03);
+        filter: drop-shadow(0 0 10px #333);
+        transition: 0.3s;
+      }
+
+      .card:hover img {
+        filter: grayscale(0%);
+      }
+
+      .card figurecaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px;
+        width: 100%;
+        height: 20%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        opacity: 0;
+        border-radius: 0 0 10px 10px;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5),
+          0%,
+          rgba(255, 255, 255, 0),
+          100%
+        );
+        border-radius: 10px;
+      }
+
+      .card:hover figurecaption {
+        opacity: 1;
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <h1>My Gallery</h1>
+        <div class="gallery">
+          <figure class="card">
+            <img src="./assets/image1.jpg" alt="" />
+            <figcaption>Image1</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/image2.jpeg" alt="" />
+            <figcaption>Image2</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/image3.jpeg" alt="" />
+            <figcaption>Image3</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/image4.jpeg" alt="" />
+            <figcaption>Image4</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/image5.jpeg" alt="" />
+            <figcaption>Image5</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/image6.jpeg" alt="" />
+            <figcaption>Image1</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/image7.jpeg" alt="" />
+            <figcaption>Image7</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/image8.jpeg" alt="" />
+            <figcaption>Image8</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/image9.jpeg" alt="" />
+            <figcaption>image9</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
