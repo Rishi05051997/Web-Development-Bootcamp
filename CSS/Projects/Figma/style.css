@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blue: #4e5dc0;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+
+.container header button {
+    height: 50px;
+    align-self: center;
+    background-color: var(--Blue);
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    color: #ffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.container header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+.container header ul li {
+    list-style: none;
+}
+
+.container header ul li:hover {
+    cursor: pointer;
+    color: var(--Blue);
+    border-bottom: 3px solid var(--Blue);
+}
+
+.about-me {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.desc {
+    width: 50%;
+}
+
+.desc h1 {
+    font-size: 3rem;
+}
+
+.desc hr {
+    margin-top: 1rem;
+    color: rgb(204, 203, 203);
+    width: 80%;
+}
+
+.text {
+    margin: 1rem 0;
+}
+
+.text p {
+    font-size: 1.2rem;
+    color: #b5b5b5;
+}
+
+.image-section {
+    width: 50%;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+hr {
+    margin-top: 6rem;
+    color: rgb(204, 203, 203);
+}
+
+.footer {
+    display: flex;
+    padding: 6rem 0;
+    justify-content: space-evenly;
+}
+
+.privacy-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    color: #4e5dc0;
+    text-decoration: underline;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.text {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.text-box {
+    width: 209px;
+    height: 64px;
+}
+
+.email {
+    margin-top: 5rem;
+}
+
+.menu-section ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-section ul li {
+    margin: 1.5rem 0;
+    list-style: none;
+    color: #999999;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo-section {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    background-color: #4e5dc0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
