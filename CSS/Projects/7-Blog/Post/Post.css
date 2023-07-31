@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 1fr 50px;
+    grid-template-areas:
+        "hd"
+        "aside"
+        "main"
+        "ft"
+    ;
+    gap: 5px;
+}
+
+#header {
+    grid-area: hd;
+    background-color: aqua;
+}
+
+#aside {
+    grid-area: aside;
+    background-color: bisque;
+}
+
+#main {
+    grid-area: main;
+    background-color: blueviolet;
+}
+
+#footer {
+    grid-area: ft;
+    background-color: darkcyan;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        grid-template-areas:
+            "hd hd"
+            "main main"
+            "ft ft";
+    }
+
+    #aside {
+        display: none;
+    }
+}
