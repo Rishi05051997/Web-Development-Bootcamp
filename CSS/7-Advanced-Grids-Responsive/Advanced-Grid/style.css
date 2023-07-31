@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: yellow;
+    height: 100vh;
+    border: 1px solid red;
+    overflow-y: auto;
+    display: grid;
+    gap: 10px;
+
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.box {
+    border: 1px solid green;
+    background-color: aqua;
+}

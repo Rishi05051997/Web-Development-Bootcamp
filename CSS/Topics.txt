@@ -159,8 +159,68 @@ Very IMP:
 CSS Grids:
   -- 2D 
   -- Flexible Grid
+    -- display:grid;
     -- grid-template-columns: repeat(3, 1fr);
     -- grid-template-rows: repeat(4, 1fr);
+    --Grid items
+      -- grid-column-start
+      -- grid-column-end
+      -- grid-row-start
+      -- grid-row-end
+
+      -- grid-area: grid-column-start/grid-row-start/grid-row-end/grid-column-end;
+    -- Grid Container
+      -- grid-template-area:
+          "header header header"
+          "side main main"
+          "footer footer footer";
+      -- Grid items
+        #header{
+          grid-area:header;
+        }
+        #side{
+          ggrid-area:side;
+        }
+        #main {
+          grid-area:main;
+        }
+        #footer {
+          grid-area:footer;
+        }
+  
+  -- Advanced Grid Concepts:
+    -- fr Units
+    -- repeat functions
+    -- grid-auto-rows: minmax()
+        -- minmax(100px, auto) - it means the height of each row at least 100px
+
+  -- Grid Properties:
+    -- Frid Container Properties:
+      -- justify-content (main axis)
+          -- value:
+            -- start
+            -- end
+            -- center
+            -- space-around
+            -- space-evenly
+            -- space-between
+      -- align-content (cross axis in case of multiple rows)
+      -- justify-items
+      -- align-items (cross axis)
+        -- start
+        -- end
+        -- center
+        -- stretch
+        -- baseline
+      -- place-items
+        -- shorthand notation for "align-items"  "justify-items"
+      --place-content:
+        -- shorthand notation for "align-content" & "justify-content"
+        place-items: center center;
+    -- Grid Items Properties:
+      -- justify-self: (around main axis)
+      -- align-self (aorund cross axis)
+      -- place-self
 
 
 Exercise time:
@@ -172,4 +232,11 @@ Learn Perspective-style
 
 
  How to create a container with 4 child boxes with emmet ?
-  --   .container>.box{bod-$}
+  --   .container>.box{box-$}
+
+    <div class="container">
+      <div class="box">Box-1</div>
+      <div class="box">Box-2</div>
+      <div class="box">Box-3</div>
+      <div class="box">Box-4</div>
+    </div>
